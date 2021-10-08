@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sacramento&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+body{
+  background: #111;
+}
+section{
+  position: relative;
+  padding: 100px;
+}
+.header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.header .logo{
+  font-family: 'Sacramento', cursive;
+  color: #fff;
+  font-size: 3em;
+}
+.header .toggle .icon{
+  max-width: 40px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 3em;
+}
+.banner{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+  background: linear-gradient(to top, #111, transparent);
+}
+.banner .content{
+  position: absolute;
+  max-width: 900px;
+  text-align: center;
+  z-index: 1;
+}
+.banner .content h2{
+  color: #fff;
+  font-size: 4em;
+}
+.banner .content p{
+  color: #fff;
+  font-size: 1.2em;
+
+  font-weight: 100;
+}
+.btn{
+  position: relative;
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 30px;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  box-shadow: (0,0,0.1);
+  opacity: 0.5;
+
+}
+.fit{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+.about{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .contentBox{
+  min-width: 50%;
+  width: 50%;
+  text-align: left;
+  padding-right: 40px;
+}
+.about .contentBox .btn{
+  text-align: center;
+}
+.title{
+  font-weight: 500;
+  font-size: 1.8em;
+  color: #fff;
+  margin-top: 10px;
+}
+.text{
+  color: #fff;
+  font-size: 1em;
+}
+.about .imgBox{
+  position: relative;
+  min-width: 50%;
+  width: 50%;
+  min-height: 500px;
+}
+
+
+.container{
+  width: 80%;
+  padding: 20px;
+  z-index: 1
+}
+.container h2{
+  width: 100%;
+  color: #ffffff;
+  font-size: 36px;
+  text-align: center;
+  margin: 0;
+}
+.container .row{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.container .row .col{
+  position: relative;
+  width: 100%;
+  padding: 0 10px;
+  margin: 30px 0 10px;
+  transition: 0.5s;
+}
+.container .row .inputBox{
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+}
+.container .row .inputBox input{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 0 10px;
+  z-index: 1;
+  color: #fff;
+}
+.container .row .inputBox .text{
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  font-size: 18px;
+  padding-left: 0 10px;
+  display: block;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.container .row .inputBox input:focus + .text,
+.container .row .inputBox input:valid + .text{
+  top: -35px;
+  left: -10px;
+}
+.container .row .inputBox .line{
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: grey;
+  transition: 0.5s;
+  border-radius: 2px;
+  pointer-events: none;
+}
+.container .row .inputBox input:focus + .line,
+.container .row .inputBox input:valid + .line{
+  height: 100%;
+}
+
+.container .button{
+  text-align: center;
+}
+
+
+.ban3{
+  position: relative;
+  width: 100%;
+  min-height: 150vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ban3:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+  background: linear-gradient(to top, #111, transparent);
+}
+
+.ban3:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+  background: linear-gradient(to bottom, #111, transparent);
+}
+
+
+.destiny{
+  text-align: center;
+}
+.destiny .destinyList{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.destiny .destinyList .box{
+  position: relative;
+  min-width: 350px;
+  height: 480px;
+  background: transparent;
+  transition: 0.5s;
+  margin: 10px;
+}
+.destiny .destinyList:hover .box{
+  opacity: 0.2;
+}
+.destiny .destinyList .box:hover{
+  opacity: 1;
+}
+.destiny .destinyList .box .imgBox{
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+.destiny .destinyList .box .content{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.destiny .destinyList .box .content h2{
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+.destiny .destinyList .box .content span{
+  font-size: 0.8em;
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+.footer{
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer .social{
+  position: relative;
+  display: flex;
+}
+.footer .social li{
+  list-style: none;
+}
+.footer .social li a{
+  text-decoration: none;
+  margin: 0 20px;
+   font-size: 2em;
+}
+.footer .social li a .icon{
+  max-width: 40px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 3em;
+}
+.footer .copy{
+  color:#808080;
+}
+.footer .copy a{
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  section{
+    padding: 40px;
+  }
+  .banner .content h2{
+    font-size: 2.5em;
+  }
+  .banner .content p{
+    font-size: 1em;
+  }
+  .about{
+    flex-direction: column;
+  }
+  .about .contentBox,
+  .about .imgBox{
+    min-width: 100%;
+    width: 100%;
+    text-align: center;
+    padding-right: 0px;
+  }
+  .about .imgBox{
+    min-height: 250px;
+  }
+  .btn{
+    margin-bottom: 30px;
+  }
+  .destiny .destinyList .box{
+    position: relative;
+    max-width: 350px;
+    width: 350px;
+    height: 400px;
+  }
+  .destiny .destinyList .box .imgBox{
+    height: 320px;
+  }
+}
